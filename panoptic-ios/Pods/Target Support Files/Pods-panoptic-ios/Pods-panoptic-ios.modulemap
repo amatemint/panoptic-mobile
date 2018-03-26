@@ -1,0 +1,6 @@
+framework module Pods_panoptic_ios {
+  umbrella header "Pods-panoptic-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}
