@@ -7,45 +7,423 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5DBEAAF26C675E5629C3CB0456696145 /* Pods-panoptic-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60A65BBEC8CB3E07D90CABC44C6C73D6 /* Pods-panoptic-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6091869CA3E28CBDDEEBD6B561E4149 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E8661DAA80514038463B09D2A4E74719 /* Pods-panoptic-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAB169836DE15A4706869F575C3757 /* Pods-panoptic-ios-dummy.m */; };
+		02AED1460E21A3E7C33AC480D7B0F3D6 /* YLPQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = FC3305533C5204FCB0EC78C647820DA0 /* YLPQuery.m */; };
+		0598BF2944CAEBDED533C1CC0996BE40 /* Alamofire+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F18C230D7812CAF87B0BEC45AAA509A /* Alamofire+Promise.swift */; };
+		05DEDC15C147194BAAC3750055AC1EE5 /* Catchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819399AE4F42C81D179EAD8C9A602D0A /* Catchable.swift */; };
+		0713CCE04CF7EE94543BA3A049EEBB3E /* MKMapSnapshotter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD2364C155649E34F75ABC8B3C4B05A /* MKMapSnapshotter+AnyPromise.m */; };
+		083DF1DB1FDB3EE678038AE5D65315A8 /* UIView+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A48FB816CA10A5960591E56A52CB8AC /* UIView+AnyPromise.m */; };
+		09732CBE1A41D64BD20CA2ECB2570701 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461321039317771C9E997D6CC699B894 /* Foundation.framework */; };
+		0985AFE7CE378DE1A23CF35F46A0ADB2 /* YelpAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 76A94B0A31DD24F11DFA7EA242AB8DDC /* YelpAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A4D570D8B757DF5B6929E702A570D5C /* MKDirections+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 330FB8F5B196BF834026F08BCC78EDBD /* MKDirections+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A7659833769A24792BD27D72DC389AE /* YLPReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 84684CAE594343FE7440C3E61789EC8E /* YLPReview.m */; };
+		0FECF5C02957F41AC936A3C75892CD98 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 890D9E95A81896DA700D0F589613D3F7 /* MapKit.framework */; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDFD95A6B8D76030F015897D8771929 /* Timeline.swift */; };
+		149B26995954EF650EF2C483CE384C01 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20AA449C58D39CAD6B09CF25D50BBDF /* Error.swift */; };
+		179BCE664FC5C916815B2432B21F7F3A /* YLPQueryPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D10CC8478F3D1359DC19199D8171DC87 /* YLPQueryPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		1833B9FDB11C18FED088E7D0902A6002 /* NSDictionary+YLPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AABBDA08A5B45250FE7F939B9B8812 /* NSDictionary+YLPUtils.m */; };
+		1A1488E7636A460AAE2E08803B3CADF9 /* UIViewController+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 984839088AAFC8FEC8F08BA5AF2F25B4 /* UIViewController+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A4A27B555C642C9ED84F185987B79FA /* NSTask+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = E744B2A9DA7D78820E39238F1E0F522B /* NSTask+AnyPromise.m */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3C2C7D042C98B0F117DC696D16C910B /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D3DC8D7983A8513B564B6357FC0619F /* Thenable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E7AE5DD7DF44D768BC129385335425 /* Thenable.swift */; };
+		1E91D3AAA7E4617C56B45893F1FF7BAF /* Guarantee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B51A5AB227CD2605D0A57B77A2CC5C7 /* Guarantee.swift */; };
+		25843E0889B570A63C3825E28517D1E0 /* UIViewController+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBD03BCCC93176A2C5E3F036708CED1 /* UIViewController+AnyPromise.m */; };
+		27913A4259D34BF6B6C70EAF82CD092A /* YLPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F63452BF01569C6E0F8090A0E367D0 /* YLPClient.m */; };
+		28513622F8E11E796D809B498D787351 /* firstly.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5CA69DD967B14BE6AA7EDC24605075 /* firstly.swift */; };
+		29DC7FFAEC06AB45DC8F145746EA9063 /* Pods-panoptic-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60A65BBEC8CB3E07D90CABC44C6C73D6 /* Pods-panoptic-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29F3EF22D045A16D136AE96C2AEE04DD /* when.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB11B6E5873D8E92B0D13F37FE9908E /* when.m */; };
+		2A3598BEC4AC6DBAAA66EC21F5BFE26A /* AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C01EAC8ADAD60895371088BC51279E8 /* AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D077167DFB19E7936369F50E4EF4480 /* YLPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F308BDDF008AA5D83444AB2304785A4 /* YLPUser.m */; };
+		2D2B923C52F9CABA01816D890B0A7896 /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93A96925E7F1C124ED75FB2B6598B52 /* UIView+Promise.swift */; };
+		2D887C7E0C48DDDADF0CE341FC1754C2 /* YLPCoordinate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C5E722B24C22735F17FCE5C668C3A9 /* YLPCoordinate.m */; };
+		3079BC3FFA52FA7F6AA6A570242AB5B9 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7908A1C98006F6AE24B4D9CECE62BD9 /* Box.swift */; };
+		31A180025C0729B2C0E2E75C1DFB72AE /* YLPBusiness.h in Headers */ = {isa = PBXBuildFile; fileRef = 336069917B4994DCA147647C8215C2A4 /* YLPBusiness.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36132D79D7AA7953F149130FD209FF94 /* NSURLSession+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5AF68501EDD24EB2C1BC766AFBB05C /* NSURLSession+AnyPromise.m */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC2EB7B3AF589E956FD98FF9E0EE28D /* TaskDelegate.swift */; };
+		3748A0A7E4D459753E6ECC60099AD4E7 /* YLPQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 191F83134BA76DE8626B1688EEEA5428 /* YLPQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39A0CED99582943B2774B6C1754915A8 /* YLPSortType.h in Headers */ = {isa = PBXBuildFile; fileRef = 6504BC4BFFED7F195880BB05DF9667EE /* YLPSortType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A975F6937B65117AB86342382191EAE /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA6B1D13FB95855F295EE81C0DCC304 /* when.swift */; };
+		3DCA8FCEA0B7304695DDED9D40498AB2 /* YLPClient+Reviews.h in Headers */ = {isa = PBXBuildFile; fileRef = 82BA037AD7D5110352F35528A101F637 /* YLPClient+Reviews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		428EE53B23B67FFB0F3EC06F19D2211E /* NSTask+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0F554003DD0194D224D1ED92C9D3AA /* NSTask+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42A1074BD15A69C9D2F901BF44581C00 /* Process+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6459F26DD073AAE05F97FB7A8E78A8 /* Process+Promise.swift */; };
+		46B82A4719EF99A91AD665E98D4878FE /* YLPClient+PhoneSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC24BACC8AD97BA9FEB3109FAB02EA2 /* YLPClient+PhoneSearch.m */; };
+		4AEEB0D72824D3335326FE8E80C196D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461321039317771C9E997D6CC699B894 /* Foundation.framework */; };
+		4EC45A6E65C00D0CF04D2CF47AE19E6D /* YLPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB9D5B7C2F2185DB6C9C85277744906 /* YLPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		504AEBD129ED8420AE984291D1A86CDE /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395E91B5999B54C20016B1F387714CAB /* Resolver.swift */; };
+		513893BF19467554AB31A443555E548B /* CLLocationManager+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = CE610436C9FA2D71F9552CA7D225F36A /* CLLocationManager+AnyPromise.m */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57B5A98A35C7A091E96F8A0F6315031 /* Request.swift */; };
+		59E16575C48E79B601D89ADB77AB32C7 /* YLPClient+PhoneSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 263BDD041A014936FA90F07EA66A70B7 /* YLPClient+PhoneSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC8A64E094F79B4D40A273B9B2015AC /* DispatchQueue+Alamofire.swift */; };
+		618F42C65E2504CCB71332E37FDB678F /* CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8B0024A433FA741A13A4B74DBBD5E3 /* CustomStringConvertible.swift */; };
+		624D38D519732C2A453A4682BFB93244 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C01CAF06394816DE12EC9314E5E242 /* Alamofire.framework */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2F09EED64D09D77D0F26CA548F33A2 /* ServerTrustPolicy.swift */; };
+		68E80ED321E41F069DC591BC1FA5CE35 /* YLPCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2103CBFCA41C9D2FB37651B2DDC3B913 /* YLPCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BE1F485BF419F5026AF4C8B8B166B74 /* dispatch_promise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED3AF4FC579C3917AFAFCFEEAC99772 /* dispatch_promise.m */; };
+		6D34EBE3DA0DD94ABC8EF8E9091A5179 /* race.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EFF65DA7CB74488E9A48D972440C7A /* race.swift */; };
+		6FD39FAA68E02AE7DCBD94AF6B2D3C45 /* YLPUser.h in Headers */ = {isa = PBXBuildFile; fileRef = C7AF5318313C9903E375259080526CFB /* YLPUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7017D3786465C533FF969031E6144A57 /* YLPLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = DB602813EAA2CBD58E783191D2D6A5F5 /* YLPLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461321039317771C9E997D6CC699B894 /* Foundation.framework */; };
+		752957DFECF2B829D1E315443E52D01E /* NSURLSession+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = ECE863C1299215810E67304C89E34D74 /* NSURLSession+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75CBDC6D1AD9D35B89B9314F11258ECA /* NSObject+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18D479CF6FA398DB48096E913D94753 /* NSObject+Promise.swift */; };
+		78C9914788ED2834081A0A6ADCA332D1 /* YLPClient+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6ACBEA36C19C63A0F031B38C254EDA /* YLPClient+Search.m */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E3726E5FD6D6FBDC050C9916DB20A5 /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9A4512C3A03F4B0AA469EFB0AD89A0 /* Result.swift */; };
+		803CF4BD06A7E5F2AE61EC2311996413 /* YelpAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C560EADF46922F3B3EF5C9493820CA /* YelpAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8283036D4F68443B3974E697CEBE24C2 /* MKMapSnapshotter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B0ECC3BBABFFDDEBFAC6C2C18BEB4C /* MKMapSnapshotter+Promise.swift */; };
+		8521573B204BA9F39CC0488F2E91BF0A /* PMKUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A96FDBFEA8FFD0C6AB777AF445DDF40A /* PMKUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87E1EEF858B8544F978F0B2D3B5162F2 /* CLLocationManager+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CB6D75107340354A825046BEB574263 /* CLLocationManager+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8883D11A96E7996B34C38110C95A71F0 /* YLPSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A634996F4B3D5BEE679B67AEAD14E7 /* YLPSearch.m */; };
+		8A29C1547C03E524844384F6606CB55B /* YLPCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D1201D478FC0FC8D633CF1BC93A1178 /* YLPCategory.m */; };
+		8E4B3075BC93350AE99E66D7CBA430B7 /* YLPLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BDE804FC83ECCB214DC0630ACBE3B /* YLPLocation.m */; };
+		8FAA2F3CF4CFF2EE22CE14C7741B5CE4 /* after.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1B2A83EE524B7E0D4F355FA38BCE7 /* after.swift */; };
+		9188B02F20D52FBA8BC4AB1F1CB6E3EB /* CLGeocoder+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = CE32D8193B892098B6EA6EEF35251816 /* CLGeocoder+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9296291181F5AF5620FAE0A9FCEC87C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AC2947AB155CA5016119A9BFD6CC62 /* CoreLocation.framework */; };
+		93B2B989C8D3B95BDE36A07A3B1E5B72 /* NSNotificationCenter+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2E43FB04F4365F6ACA3AEA285D8D0E /* NSNotificationCenter+Promise.swift */; };
+		946A8C4C84B5CBC0622E22AFFFBC7A32 /* AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3C32A276653FE6828B6A16FF2FE337 /* AnyPromise.m */; };
+		94C8EFA6670EE864AB9CF6F32D90CE0F /* NSURLSession+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B8D289D4C16C1BC586CC56F92AEEEF /* NSURLSession+Promise.swift */; };
+		959C2D1C1E632EEE9E116DFDD0F0D335 /* CLGeocoder+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B381F229440E89B2CCAC07709AF24DA1 /* CLGeocoder+Promise.swift */; };
+		9887942A8D9A547FEDED8E75537BD78B /* afterlife.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29341B4181546885A4DB7FE3B2DDE44C /* afterlife.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012602EF73AC1657DEBE12057CB8D09B /* AFError.swift */; };
+		A04F716903226403A3C53697B721CC9D /* YLPResponsePrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 815C160F6FDC2739DF5833788B811D8A /* YLPResponsePrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A1F4E36AD016684424AD67CE5ADF02D6 /* NSNotificationCenter+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CA8E6CA275DE11467E0EB9A9BD7965 /* NSNotificationCenter+AnyPromise.m */; };
+		A2976DB33C148B7C6DC296BA5544F8CA /* NSNotificationCenter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 4783071B3B786276D32C5C411B6A858A /* NSNotificationCenter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21283108125E21EBF13E1FB259291A7 /* NetworkReachabilityManager.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933C11D520AA1DE4F7517B3A54C902B /* Alamofire-dummy.m */; };
+		AA1FDFE4D0B2F701577EC7BC69FCFF0B /* hang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653130776D1AB6CD2B99F7F439B52C59 /* hang.swift */; };
+		ABAF551340A44595B53FB8C3E3980B3D /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDA986BCBE90446D6A1FDE16C382B53 /* PromiseKit-dummy.m */; };
+		ABE4413A7EB6845626B1A275A7BD9DAB /* YLPSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 935371D0C8E037667B65224E4A165CDA /* YLPSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC2DD71997C524A46035803DCE47F6B0 /* UIView+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E13B86668470DB086E5993718BA1BA /* UIView+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205C1AB83CD84872E7602C34C766629B /* SessionManager.swift */; };
+		B0ACC60B66FA8D064C45D18F50D510C5 /* MKDirections+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393ED28AD99731AEB7A9608B0CF4E84E /* MKDirections+Promise.swift */; };
+		B0CAE4AAE6B6A6C6FDEC58434B02E851 /* YLPBusinessReviews.h in Headers */ = {isa = PBXBuildFile; fileRef = B1C2233392EF0B55E543B8421804870A /* YLPBusinessReviews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B290A0C6C0B2F177A62E8A4F28FAF621 /* hang.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2D01C1B9406E6641EA241D1731DC8C /* hang.m */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F7B9685AD2CB56A94CB19AE270282 /* MultipartFormData.swift */; };
+		B800B62B6F99F75153AC2F6E34CAFBA6 /* after.m in Sources */ = {isa = PBXBuildFile; fileRef = 4455AAD033155B24E0D1E59BE51D7C8E /* after.m */; };
+		BB5677762F942194C7E434347CD621A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461321039317771C9E997D6CC699B894 /* Foundation.framework */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401EFDF79D3B7C1B2EA4755C2F194E4E /* Validation.swift */; };
+		BC6977259EE215A1976813DE524B6F90 /* join.m in Sources */ = {isa = PBXBuildFile; fileRef = 17094D6CEDD3CC5C2F604C83D01DE559 /* join.m */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33680D30A6D58ADA8AA7AAAD8D5A23F9 /* ParameterEncoding.swift */; };
+		BF7A5F8E287226003057D4EBA48387E6 /* PromiseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E2EB1BB05769BD9D044421307D859F64 /* PromiseKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C134A60FCB314FE6E698E6C4B0B2D969 /* MKMapSnapshotter+AnyPromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 95C7ECB55650325DD6F3C8918F39E186 /* MKMapSnapshotter+AnyPromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2CB1B35DFE7D4D04EC2E681D7A5EFEA /* PMKFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2E560433BBD4887D90A9E302FAEDC5 /* PMKFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C5594C2BA933D90D2014586FEC3CD0 /* PMKCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 06C955B7DB98D6B330DF4297EAA1FE6E /* PMKCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6D1098EC720C474EE19094BAC0E25BE /* PMKMapKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE1C17D8F9483EA6C4A1C464156F88E /* PMKMapKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7F035D678AD9598B512BF1F75E4DBD6 /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = 691B51E188FA47AE62A1946B4E780AEC /* fwd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02578B0A05631EC012CDBBD7335AEA5B /* Response.swift */; };
+		CBABC95192B0FC1A9D874DC6E39A0438 /* CLGeocoder+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 040CC9E06A190F245D8EE61141ACE93E /* CLGeocoder+AnyPromise.m */; };
+		CCFFB95556D18583A5965D3D63F74CB7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 373598AACE19164E29A0F1692D37D630 /* Configuration.swift */; };
+		CE35BC93FB51C9757D46519579BC1FDB /* YLPReview.h in Headers */ = {isa = PBXBuildFile; fileRef = 69220FBEF804DF05D077CEAB42CDC540 /* YLPReview.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1B21FDC05ED56A04CF120656C7C1169 /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B6227BCF8B4E3E145DD40E40AD97B8 /* Deprecations.swift */; };
+		D3AFD73B16D93999AE74D0B4D6AEB0FA /* YLPBusiness.m in Sources */ = {isa = PBXBuildFile; fileRef = 25081520690CAD22EDF25A350A32D5ED /* YLPBusiness.m */; };
+		D3DE1935C23E48A537D1EED2D6EE7903 /* AnyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F95CA1CD14428CE26185A789099809 /* AnyPromise.swift */; };
+		DEFCE59E20E3FF2C22BC4BF07A81AA93 /* MKDirections+AnyPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E9451DA86A75A049313C4AABDBE0069 /* MKDirections+AnyPromise.m */; };
+		DEFEC37DB94E54DE5CBCB06AA25F6349 /* YLPClient+Business.m in Sources */ = {isa = PBXBuildFile; fileRef = BB78F0DD1E44100250C82F3AD152A993 /* YLPClient+Business.m */; };
+		DF08FD41B6D852BE51F904FEC56FFD0A /* Pods-panoptic-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEAB169836DE15A4706869F575C3757 /* Pods-panoptic-ios-dummy.m */; };
+		E03F761A4E5F2DEA21A08CB3A28D6275 /* YLPClient+Search.h in Headers */ = {isa = PBXBuildFile; fileRef = 196572D365975F8D367DEA951E7ECAF7 /* YLPClient+Search.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3EA39AA6C2D738A3A0E4ECAEC3DF5F1 /* YLPClientPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = C31CFB73BEDCE1BFC7166B691240B474 /* YLPClientPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		EAF43B1E09006041E718306F15DD5CFA /* UIViewPropertyAnimator+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449CFB44F604D3963155D33004A503A1 /* UIViewPropertyAnimator+Promise.swift */; };
+		EC239B2809CF6E05114703C542785D4C /* YLPClient+Business.h in Headers */ = {isa = PBXBuildFile; fileRef = 10BE8B3FA0A5C5DD2CBC4C8A0783DDFF /* YLPClient+Business.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC835A1EE5988FD3A161A7AB13233091 /* YLPClient+Reviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF7175006A09BEFFB3594ADBB4A5F91 /* YLPClient+Reviews.m */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DABC4AEEC55F4FEF0D4509BC05102A /* Notifications.swift */; };
+		F230B7AE34AA377F2ABC69C296A511A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA91308DF427EF4DAAF107D917E429F /* UIKit.framework */; };
+		F30D56AAFB0FBE094F793D0AA991188A /* YLPBusinessReviews.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ABEDF914FAF7354A160E528B09354F /* YLPBusinessReviews.m */; };
+		F3431E958844FD5B624F23213B7B49D7 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FB59BCFFD280AE525A2ABB5C799505 /* Promise.swift */; };
+		F47C7C54128A20E9D3A4D2172BF7F19F /* YLPCoordinate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CA4DA9854CE60BEA1602A4080E5E31F /* YLPCoordinate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F693798EC92DB7A03102C1C72F6BD27C /* PromiseKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 860EE000B3B38F8AB14B01101BD6E871 /* PromiseKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9075F967A21849148E9D8393FD37CA /* ResponseSerialization.swift */; };
+		F6F9149332A0E6D01C46613B6CD655A3 /* CLLocationManager+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5708CA550FCE86C8B2422F8E7F4C09C6 /* CLLocationManager+Promise.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAF096B54465EC426C04AD0FF2DDFEF /* Alamofire.swift */; };
+		F942368554F9A935B50A486E67D4AF39 /* YelpAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC613DB95323E7ED8C78C307AE534B46 /* YelpAPI-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1554C50173619420DD2E2763EEEF1408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		1946E26D9EAF40B52F4B001516E4232A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4ABF7332DF4FC36B612812D7873AFC7C;
+			remoteInfo = YelpAPI;
+		};
+		3A62F81BF7236F16F21D5D4E10D76D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADB89CC2EC3D92D7B27EA2FA476CFE4D;
+			remoteInfo = PromiseKit;
+		};
+		EA21710B315764020158F9A108FA13B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		012602EF73AC1657DEBE12057CB8D09B /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		02578B0A05631EC012CDBBD7335AEA5B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		040CC9E06A190F245D8EE61141ACE93E /* CLGeocoder+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLGeocoder+AnyPromise.m"; path = "Extensions/CoreLocation/Sources/CLGeocoder+AnyPromise.m"; sourceTree = "<group>"; };
+		06C955B7DB98D6B330DF4297EAA1FE6E /* PMKCoreLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKCoreLocation.h; path = Extensions/CoreLocation/Sources/PMKCoreLocation.h; sourceTree = "<group>"; };
+		08C7A82E99A91FECF4461BA076EF2E51 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B2F7B9685AD2CB56A94CB19AE270282 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		0D032A2E6A560041450A917866C76BA4 /* Pods-panoptic-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-panoptic-ios.modulemap"; sourceTree = "<group>"; };
+		0D1201D478FC0FC8D633CF1BC93A1178 /* YLPCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPCategory.m; path = Classes/Response/YLPCategory.m; sourceTree = "<group>"; };
+		0FF7175006A09BEFFB3594ADBB4A5F91 /* YLPClient+Reviews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "YLPClient+Reviews.m"; path = "Classes/Client/YLPClient+Reviews.m"; sourceTree = "<group>"; };
+		10BE8B3FA0A5C5DD2CBC4C8A0783DDFF /* YLPClient+Business.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YLPClient+Business.h"; path = "Classes/Client/YLPClient+Business.h"; sourceTree = "<group>"; };
+		112FD870B892DECE88A0526EB683C3EF /* YelpAPI-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YelpAPI-prefix.pch"; sourceTree = "<group>"; };
 		13600DE1E1B5B7DC4D50EC34180AE96D /* Pods-panoptic-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-panoptic-ios.release.xcconfig"; sourceTree = "<group>"; };
+		13C5E722B24C22735F17FCE5C668C3A9 /* YLPCoordinate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPCoordinate.m; path = Classes/Common/YLPCoordinate.m; sourceTree = "<group>"; };
+		17094D6CEDD3CC5C2F604C83D01DE559 /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
+		191F83134BA76DE8626B1688EEEA5428 /* YLPQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPQuery.h; path = Classes/Request/YLPQuery.h; sourceTree = "<group>"; };
+		196572D365975F8D367DEA951E7ECAF7 /* YLPClient+Search.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YLPClient+Search.h"; path = "Classes/Client/YLPClient+Search.h"; sourceTree = "<group>"; };
+		1A61C38522C5E0FE6AC13B252A9AA94B /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		1B51A5AB227CD2605D0A57B77A2CC5C7 /* Guarantee.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Guarantee.swift; path = Sources/Guarantee.swift; sourceTree = "<group>"; };
+		1E6ACBEA36C19C63A0F031B38C254EDA /* YLPClient+Search.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "YLPClient+Search.m"; path = "Classes/Client/YLPClient+Search.m"; sourceTree = "<group>"; };
+		205C1AB83CD84872E7602C34C766629B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		2103CBFCA41C9D2FB37651B2DDC3B913 /* YLPCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPCategory.h; path = Classes/Response/YLPCategory.h; sourceTree = "<group>"; };
+		25081520690CAD22EDF25A350A32D5ED /* YLPBusiness.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPBusiness.m; path = Classes/Response/YLPBusiness.m; sourceTree = "<group>"; };
+		263BDD041A014936FA90F07EA66A70B7 /* YLPClient+PhoneSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YLPClient+PhoneSearch.h"; path = "Classes/Client/YLPClient+PhoneSearch.h"; sourceTree = "<group>"; };
+		29341B4181546885A4DB7FE3B2DDE44C /* afterlife.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = afterlife.swift; path = Extensions/Foundation/Sources/afterlife.swift; sourceTree = "<group>"; };
+		29F63452BF01569C6E0F8090A0E367D0 /* YLPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPClient.m; path = Classes/Client/YLPClient.m; sourceTree = "<group>"; };
+		2CA6B1D13FB95855F295EE81C0DCC304 /* when.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = when.swift; path = Sources/when.swift; sourceTree = "<group>"; };
+		2CECE0FA0B1070B5D4F58D0A2A92F810 /* PromiseKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PromiseKit.xcconfig; sourceTree = "<group>"; };
+		2E64F9234E30000F1930D5B8751ED3E0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B6227BCF8B4E3E145DD40E40AD97B8 /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Sources/Deprecations.swift; sourceTree = "<group>"; };
+		330FB8F5B196BF834026F08BCC78EDBD /* MKDirections+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKDirections+AnyPromise.h"; path = "Extensions/MapKit/Sources/MKDirections+AnyPromise.h"; sourceTree = "<group>"; };
+		336069917B4994DCA147647C8215C2A4 /* YLPBusiness.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPBusiness.h; path = Classes/Response/YLPBusiness.h; sourceTree = "<group>"; };
+		33680D30A6D58ADA8AA7AAAD8D5A23F9 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		34DABC4AEEC55F4FEF0D4509BC05102A /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		373598AACE19164E29A0F1692D37D630 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Sources/Configuration.swift; sourceTree = "<group>"; };
 		38AF59859495A2A2FEC0E8223CA42250 /* Pods-panoptic-ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-panoptic-ios-acknowledgements.plist"; sourceTree = "<group>"; };
+		393ED28AD99731AEB7A9608B0CF4E84E /* MKDirections+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MKDirections+Promise.swift"; path = "Extensions/MapKit/Sources/MKDirections+Promise.swift"; sourceTree = "<group>"; };
+		395E91B5999B54C20016B1F387714CAB /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Resolver.swift; sourceTree = "<group>"; };
+		3F308BDDF008AA5D83444AB2304785A4 /* YLPUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPUser.m; path = Classes/Response/YLPUser.m; sourceTree = "<group>"; };
+		401EFDF79D3B7C1B2EA4755C2F194E4E /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		4455AAD033155B24E0D1E59BE51D7C8E /* after.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = after.m; path = Sources/after.m; sourceTree = "<group>"; };
+		449CFB44F604D3963155D33004A503A1 /* UIViewPropertyAnimator+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewPropertyAnimator+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewPropertyAnimator+Promise.swift"; sourceTree = "<group>"; };
+		45E7AE5DD7DF44D768BC129385335425 /* Thenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Thenable.swift; path = Sources/Thenable.swift; sourceTree = "<group>"; };
+		461321039317771C9E997D6CC699B894 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		46498E111C1FF1E25C6A7846747E92FC /* Pods-panoptic-ios-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-panoptic-ios-frameworks.sh"; sourceTree = "<group>"; };
+		4783071B3B786276D32C5C411B6A858A /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
+		4A2E43FB04F4365F6ACA3AEA285D8D0E /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
+		4A48FB816CA10A5960591E56A52CB8AC /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
 		4B6ABD8E95DA9C5A0823707CB1EF1494 /* Pods-panoptic-ios-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-panoptic-ios-resources.sh"; sourceTree = "<group>"; };
+		4E9451DA86A75A049313C4AABDBE0069 /* MKDirections+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKDirections+AnyPromise.m"; path = "Extensions/MapKit/Sources/MKDirections+AnyPromise.m"; sourceTree = "<group>"; };
+		50A634996F4B3D5BEE679B67AEAD14E7 /* YLPSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPSearch.m; path = Classes/Response/YLPSearch.m; sourceTree = "<group>"; };
+		567EA2FFB7BD0EE4ABB1312289D4C71F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5708CA550FCE86C8B2422F8E7F4C09C6 /* CLLocationManager+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLLocationManager+Promise.swift"; path = "Extensions/CoreLocation/Sources/CLLocationManager+Promise.swift"; sourceTree = "<group>"; };
+		5BC2EB7B3AF589E956FD98FF9E0EE28D /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		5CB6D75107340354A825046BEB574263 /* CLLocationManager+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLLocationManager+AnyPromise.h"; path = "Extensions/CoreLocation/Sources/CLLocationManager+AnyPromise.h"; sourceTree = "<group>"; };
 		5CEAB169836DE15A4706869F575C3757 /* Pods-panoptic-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-panoptic-ios-dummy.m"; sourceTree = "<group>"; };
 		5D89515A492046650CF1A7C50DDA7106 /* Pods-panoptic-ios-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-panoptic-ios-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5FB11B6E5873D8E92B0D13F37FE9908E /* when.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = when.m; path = Sources/when.m; sourceTree = "<group>"; };
 		60A65BBEC8CB3E07D90CABC44C6C73D6 /* Pods-panoptic-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-panoptic-ios-umbrella.h"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6504BC4BFFED7F195880BB05DF9667EE /* YLPSortType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPSortType.h; path = Classes/Request/YLPSortType.h; sourceTree = "<group>"; };
+		653130776D1AB6CD2B99F7F439B52C59 /* hang.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = hang.swift; path = Sources/hang.swift; sourceTree = "<group>"; };
+		691B51E188FA47AE62A1946B4E780AEC /* fwd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fwd.h; path = Sources/fwd.h; sourceTree = "<group>"; };
+		69220FBEF804DF05D077CEAB42CDC540 /* YLPReview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPReview.h; path = Classes/Response/YLPReview.h; sourceTree = "<group>"; };
+		69B0ECC3BBABFFDDEBFAC6C2C18BEB4C /* MKMapSnapshotter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MKMapSnapshotter+Promise.swift"; path = "Extensions/MapKit/Sources/MKMapSnapshotter+Promise.swift"; sourceTree = "<group>"; };
+		6C0F554003DD0194D224D1ED92C9D3AA /* NSTask+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTask+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.h"; sourceTree = "<group>"; };
+		6EBD03BCCC93176A2C5E3F036708CED1 /* UIViewController+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.m"; sourceTree = "<group>"; };
+		6F18C230D7812CAF87B0BEC45AAA509A /* Alamofire+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Alamofire+Promise.swift"; path = "Extensions/Alamofire/Sources/Alamofire+Promise.swift"; sourceTree = "<group>"; };
+		72AABBDA08A5B45250FE7F939B9B8812 /* NSDictionary+YLPUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+YLPUtils.m"; path = "Classes/Response/NSDictionary+YLPUtils.m"; sourceTree = "<group>"; };
+		72F95CA1CD14428CE26185A789099809 /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
+		76A94B0A31DD24F11DFA7EA242AB8DDC /* YelpAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YelpAPI.h; path = Classes/YelpAPI.h; sourceTree = "<group>"; };
+		76C560EADF46922F3B3EF5C9493820CA /* YelpAPI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YelpAPI-umbrella.h"; sourceTree = "<group>"; };
+		7E2E560433BBD4887D90A9E302FAEDC5 /* PMKFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKFoundation.h; path = Extensions/Foundation/Sources/PMKFoundation.h; sourceTree = "<group>"; };
+		815C160F6FDC2739DF5833788B811D8A /* YLPResponsePrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPResponsePrivate.h; path = Classes/Response/YLPResponsePrivate.h; sourceTree = "<group>"; };
+		819399AE4F42C81D179EAD8C9A602D0A /* Catchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Catchable.swift; path = Sources/Catchable.swift; sourceTree = "<group>"; };
+		82BA037AD7D5110352F35528A101F637 /* YLPClient+Reviews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YLPClient+Reviews.h"; path = "Classes/Client/YLPClient+Reviews.h"; sourceTree = "<group>"; };
+		82E3726E5FD6D6FBDC050C9916DB20A5 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		84684CAE594343FE7440C3E61789EC8E /* YLPReview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPReview.m; path = Classes/Response/YLPReview.m; sourceTree = "<group>"; };
+		85AC2947AB155CA5016119A9BFD6CC62 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		860EE000B3B38F8AB14B01101BD6E871 /* PromiseKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-umbrella.h"; sourceTree = "<group>"; };
+		890D9E95A81896DA700D0F589613D3F7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		8933C11D520AA1DE4F7517B3A54C902B /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		8A8B0024A433FA741A13A4B74DBBD5E3 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomStringConvertible.swift; path = Sources/CustomStringConvertible.swift; sourceTree = "<group>"; };
+		8C01EAC8ADAD60895371088BC51279E8 /* AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AnyPromise.h; path = Sources/AnyPromise.h; sourceTree = "<group>"; };
+		8CA4DA9854CE60BEA1602A4080E5E31F /* YLPCoordinate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPCoordinate.h; path = Classes/Common/YLPCoordinate.h; sourceTree = "<group>"; };
+		8ED3AF4FC579C3917AFAFCFEEAC99772 /* dispatch_promise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = dispatch_promise.m; path = Sources/dispatch_promise.m; sourceTree = "<group>"; };
+		935371D0C8E037667B65224E4A165CDA /* YLPSearch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPSearch.h; path = Classes/Response/YLPSearch.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C2E60DAD704F5940408C5850BA047D3A /* Pods_panoptic_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_panoptic_ios.framework; path = "Pods-panoptic-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95C7ECB55650325DD6F3C8918F39E186 /* MKMapSnapshotter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MKMapSnapshotter+AnyPromise.h"; path = "Extensions/MapKit/Sources/MKMapSnapshotter+AnyPromise.h"; sourceTree = "<group>"; };
+		97EFF65DA7CB74488E9A48D972440C7A /* race.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = race.swift; path = Sources/race.swift; sourceTree = "<group>"; };
+		984839088AAFC8FEC8F08BA5AF2F25B4 /* UIViewController+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIViewController+AnyPromise.h"; sourceTree = "<group>"; };
+		9B3C32A276653FE6828B6A16FF2FE337 /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
+		9C777531B8C3BC1AB4107BAA61E057B7 /* YelpAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YelpAPI.modulemap; sourceTree = "<group>"; };
+		9E9075F967A21849148E9D8393FD37CA /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		9F9BAF2B425E7D4AD6297E8399CE6DFB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A12460DCD41DE1F1E00AA704103AC386 /* Pods_panoptic_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_panoptic_ios.framework; path = "Pods-panoptic-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A96FDBFEA8FFD0C6AB777AF445DDF40A /* PMKUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKUIKit.h; path = Extensions/UIKit/Sources/PMKUIKit.h; sourceTree = "<group>"; };
+		A9E0239D528C16253079036E1980A3D6 /* YelpAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YelpAPI.xcconfig; sourceTree = "<group>"; };
+		ABC761EADF9B37C96B959F6081E77C58 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		ACDFD95A6B8D76030F015897D8771929 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		ADC8A64E094F79B4D40A273B9B2015AC /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		ADDA986BCBE90446D6A1FDE16C382B53 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
+		AF15FF73266ED23390786D5A97781B8F /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C2233392EF0B55E543B8421804870A /* YLPBusinessReviews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPBusinessReviews.h; path = Classes/Response/YLPBusinessReviews.h; sourceTree = "<group>"; };
+		B21283108125E21EBF13E1FB259291A7 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		B381F229440E89B2CCAC07709AF24DA1 /* CLGeocoder+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CLGeocoder+Promise.swift"; path = "Extensions/CoreLocation/Sources/CLGeocoder+Promise.swift"; sourceTree = "<group>"; };
+		B93A96925E7F1C124ED75FB2B6598B52 /* UIView+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Promise.swift"; path = "Extensions/UIKit/Sources/UIView+Promise.swift"; sourceTree = "<group>"; };
+		BB78F0DD1E44100250C82F3AD152A993 /* YLPClient+Business.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "YLPClient+Business.m"; path = "Classes/Client/YLPClient+Business.m"; sourceTree = "<group>"; };
+		BD9A4512C3A03F4B0AA469EFB0AD89A0 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		BFB9D5B7C2F2185DB6C9C85277744906 /* YLPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPClient.h; path = Classes/Client/YLPClient.h; sourceTree = "<group>"; };
+		C20AA449C58D39CAD6B09CF25D50BBDF /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/Error.swift; sourceTree = "<group>"; };
+		C31CFB73BEDCE1BFC7166B691240B474 /* YLPClientPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPClientPrivate.h; path = Classes/Client/YLPClientPrivate.h; sourceTree = "<group>"; };
+		C7AF5318313C9903E375259080526CFB /* YLPUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPUser.h; path = Classes/Response/YLPUser.h; sourceTree = "<group>"; };
+		C8ABEDF914FAF7354A160E528B09354F /* YLPBusinessReviews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPBusinessReviews.m; path = Classes/Response/YLPBusinessReviews.m; sourceTree = "<group>"; };
+		C8FB59BCFFD280AE525A2ABB5C799505 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
+		CA2D01C1B9406E6641EA241D1731DC8C /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
+		CE32D8193B892098B6EA6EEF35251816 /* CLGeocoder+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLGeocoder+AnyPromise.h"; path = "Extensions/CoreLocation/Sources/CLGeocoder+AnyPromise.h"; sourceTree = "<group>"; };
+		CE610436C9FA2D71F9552CA7D225F36A /* CLLocationManager+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLLocationManager+AnyPromise.m"; path = "Extensions/CoreLocation/Sources/CLLocationManager+AnyPromise.m"; sourceTree = "<group>"; };
+		CF1BDE804FC83ECCB214DC0630ACBE3B /* YLPLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPLocation.m; path = Classes/Response/YLPLocation.m; sourceTree = "<group>"; };
+		CF3AC835F7C38A612E89385CB25FB2FA /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PromiseKit.modulemap; sourceTree = "<group>"; };
+		D0CA8E6CA275DE11467E0EB9A9BD7965 /* NSNotificationCenter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.m"; sourceTree = "<group>"; };
+		D10CC8478F3D1359DC19199D8171DC87 /* YLPQueryPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPQueryPrivate.h; path = Classes/Request/YLPQueryPrivate.h; sourceTree = "<group>"; };
+		D3F6B3436A00177699B0BD9145C4717D /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		D6C01CAF06394816DE12EC9314E5E242 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA654DAC710809B98AB8BCB9E82FE261 /* YelpAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YelpAPI.framework; path = YelpAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB602813EAA2CBD58E783191D2D6A5F5 /* YLPLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YLPLocation.h; path = Classes/Response/YLPLocation.h; sourceTree = "<group>"; };
+		DC613DB95323E7ED8C78C307AE534B46 /* YelpAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YelpAPI-dummy.m"; sourceTree = "<group>"; };
+		E18D479CF6FA398DB48096E913D94753 /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
+		E2EB1BB05769BD9D044421307D859F64 /* PromiseKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PromiseKit.h; path = Sources/PromiseKit.h; sourceTree = "<group>"; };
+		E3C2C7D042C98B0F117DC696D16C910B /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		E57B5A98A35C7A091E96F8A0F6315031 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		E744B2A9DA7D78820E39238F1E0F522B /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
+		EAE1C17D8F9483EA6C4A1C464156F88E /* PMKMapKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PMKMapKit.h; path = Extensions/MapKit/Sources/PMKMapKit.h; sourceTree = "<group>"; };
+		EB5AF68501EDD24EB2C1BC766AFBB05C /* NSURLSession+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLSession+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.m"; sourceTree = "<group>"; };
+		ECE863C1299215810E67304C89E34D74 /* NSURLSession+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLSession+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSURLSession+AnyPromise.h"; sourceTree = "<group>"; };
+		ED2F09EED64D09D77D0F26CA548F33A2 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		EDD1B2A83EE524B7E0D4F355FA38BCE7 /* after.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = after.swift; path = Sources/after.swift; sourceTree = "<group>"; };
 		EF3490414CC6D9F9D7256F0E657FA4B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFA91308DF427EF4DAAF107D917E429F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F0E13B86668470DB086E5993718BA1BA /* UIView+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+AnyPromise.h"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.h"; sourceTree = "<group>"; };
+		F5B8D289D4C16C1BC586CC56F92AEEEF /* NSURLSession+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSURLSession+Promise.swift"; path = "Extensions/Foundation/Sources/NSURLSession+Promise.swift"; sourceTree = "<group>"; };
+		F7908A1C98006F6AE24B4D9CECE62BD9 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Box.swift; sourceTree = "<group>"; };
+		FA6318599BD8532E360C396DDABCA525 /* PromiseKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PromiseKit-prefix.pch"; sourceTree = "<group>"; };
+		FC3305533C5204FCB0EC78C647820DA0 /* YLPQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YLPQuery.m; path = Classes/Request/YLPQuery.m; sourceTree = "<group>"; };
+		FC5CA69DD967B14BE6AA7EDC24605075 /* firstly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = firstly.swift; path = Sources/firstly.swift; sourceTree = "<group>"; };
+		FDC24BACC8AD97BA9FEB3109FAB02EA2 /* YLPClient+PhoneSearch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "YLPClient+PhoneSearch.m"; path = "Classes/Client/YLPClient+PhoneSearch.m"; sourceTree = "<group>"; };
+		FEAF096B54465EC426C04AD0FF2DDFEF /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		FF6459F26DD073AAE05F97FB7A8E78A8 /* Process+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+Promise.swift"; path = "Extensions/Foundation/Sources/Process+Promise.swift"; sourceTree = "<group>"; };
 		FFB46541ACA119ACF87DC51B32462472 /* Pods-panoptic-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-panoptic-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		FFD2364C155649E34F75ABC8B3C4B05A /* MKMapSnapshotter+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MKMapSnapshotter+AnyPromise.m"; path = "Extensions/MapKit/Sources/MKMapSnapshotter+AnyPromise.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C9CAC2A840E77AA5DBBB0B060D8DED93 /* Frameworks */ = {
+		48AFC2A140316D72F559231922A77200 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6091869CA3E28CBDDEEBD6B561E4149 /* Foundation.framework in Frameworks */,
+				BB5677762F942194C7E434347CD621A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B9C996AED49ED7CF8EC2A6F1738059 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FDF776127BB9C243AAA37B9287AABD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624D38D519732C2A453A4682BFB93244 /* Alamofire.framework in Frameworks */,
+				9296291181F5AF5620FAE0A9FCEC87C9 /* CoreLocation.framework in Frameworks */,
+				09732CBE1A41D64BD20CA2ECB2570701 /* Foundation.framework in Frameworks */,
+				0FECF5C02957F41AC936A3C75892CD98 /* MapKit.framework in Frameworks */,
+				F230B7AE34AA377F2ABC69C296A511A6 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E883B3BB79688C30A0FD633770E0D3D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AEEB0D72824D3335326FE8E80C196D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E27A37E55E8BF88A99D726AF89750B0 /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				CE32D8193B892098B6EA6EEF35251816 /* CLGeocoder+AnyPromise.h */,
+				040CC9E06A190F245D8EE61141ACE93E /* CLGeocoder+AnyPromise.m */,
+				B381F229440E89B2CCAC07709AF24DA1 /* CLGeocoder+Promise.swift */,
+				5CB6D75107340354A825046BEB574263 /* CLLocationManager+AnyPromise.h */,
+				CE610436C9FA2D71F9552CA7D225F36A /* CLLocationManager+AnyPromise.m */,
+				5708CA550FCE86C8B2422F8E7F4C09C6 /* CLLocationManager+Promise.swift */,
+				06C955B7DB98D6B330DF4297EAA1FE6E /* PMKCoreLocation.h */,
+			);
+			name = CoreLocation;
+			sourceTree = "<group>";
+		};
+		11B39269311CF4ED9DDB804E1BF9B2AF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				85AC2947AB155CA5016119A9BFD6CC62 /* CoreLocation.framework */,
+				461321039317771C9E997D6CC699B894 /* Foundation.framework */,
+				890D9E95A81896DA700D0F589613D3F7 /* MapKit.framework */,
+				EFA91308DF427EF4DAAF107D917E429F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		1BCE14FF7FFB323555AD25CC72186F3A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				46B39D1EDADD2B9A067E030276E7219F /* Pods-panoptic-ios */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2DAA09841729B8C987E57BAF355F85F7 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				012602EF73AC1657DEBE12057CB8D09B /* AFError.swift */,
+				FEAF096B54465EC426C04AD0FF2DDFEF /* Alamofire.swift */,
+				ADC8A64E094F79B4D40A273B9B2015AC /* DispatchQueue+Alamofire.swift */,
+				0B2F7B9685AD2CB56A94CB19AE270282 /* MultipartFormData.swift */,
+				B21283108125E21EBF13E1FB259291A7 /* NetworkReachabilityManager.swift */,
+				34DABC4AEEC55F4FEF0D4509BC05102A /* Notifications.swift */,
+				33680D30A6D58ADA8AA7AAAD8D5A23F9 /* ParameterEncoding.swift */,
+				E57B5A98A35C7A091E96F8A0F6315031 /* Request.swift */,
+				02578B0A05631EC012CDBBD7335AEA5B /* Response.swift */,
+				9E9075F967A21849148E9D8393FD37CA /* ResponseSerialization.swift */,
+				BD9A4512C3A03F4B0AA469EFB0AD89A0 /* Result.swift */,
+				ED2F09EED64D09D77D0F26CA548F33A2 /* ServerTrustPolicy.swift */,
+				82E3726E5FD6D6FBDC050C9916DB20A5 /* SessionDelegate.swift */,
+				205C1AB83CD84872E7602C34C766629B /* SessionManager.swift */,
+				5BC2EB7B3AF589E956FD98FF9E0EE28D /* TaskDelegate.swift */,
+				ACDFD95A6B8D76030F015897D8771929 /* Timeline.swift */,
+				401EFDF79D3B7C1B2EA4755C2F194E4E /* Validation.swift */,
+				FA38A11656887F416E923AF15C86A212 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		3D68FBD86AAD6FB6CEAC5562E73689FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2DAA09841729B8C987E57BAF355F85F7 /* Alamofire */,
+				84560862282082A04399B6C7C69B312B /* PromiseKit */,
+				B83286653F9525E385F5467E5DEC9742 /* YelpAPI */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		46B39D1EDADD2B9A067E030276E7219F /* Pods-panoptic-ios */ = {
@@ -66,69 +444,367 @@
 			path = "Target Support Files/Pods-panoptic-ios";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		545588EE4684A0E88A44CD6523B7E0C9 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				EBB6463E7A036BE9D4F225C05AAC8C5C /* Products */,
-				1BCE14FF7FFB323555AD25CC72186F3A /* Targets Support Files */,
+				29341B4181546885A4DB7FE3B2DDE44C /* afterlife.swift */,
+				4783071B3B786276D32C5C411B6A858A /* NSNotificationCenter+AnyPromise.h */,
+				D0CA8E6CA275DE11467E0EB9A9BD7965 /* NSNotificationCenter+AnyPromise.m */,
+				4A2E43FB04F4365F6ACA3AEA285D8D0E /* NSNotificationCenter+Promise.swift */,
+				E18D479CF6FA398DB48096E913D94753 /* NSObject+Promise.swift */,
+				6C0F554003DD0194D224D1ED92C9D3AA /* NSTask+AnyPromise.h */,
+				E744B2A9DA7D78820E39238F1E0F522B /* NSTask+AnyPromise.m */,
+				ECE863C1299215810E67304C89E34D74 /* NSURLSession+AnyPromise.h */,
+				EB5AF68501EDD24EB2C1BC766AFBB05C /* NSURLSession+AnyPromise.m */,
+				F5B8D289D4C16C1BC586CC56F92AEEEF /* NSURLSession+Promise.swift */,
+				7E2E560433BBD4887D90A9E302FAEDC5 /* PMKFoundation.h */,
+				FF6459F26DD073AAE05F97FB7A8E78A8 /* Process+Promise.swift */,
 			);
+			name = Foundation;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		55165A2071DB9CE8D47CBE105CF998A4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				9F9BAF2B425E7D4AD6297E8399CE6DFB /* Info.plist */,
+				9C777531B8C3BC1AB4107BAA61E057B7 /* YelpAPI.modulemap */,
+				A9E0239D528C16253079036E1980A3D6 /* YelpAPI.xcconfig */,
+				DC613DB95323E7ED8C78C307AE534B46 /* YelpAPI-dummy.m */,
+				112FD870B892DECE88A0526EB683C3EF /* YelpAPI-prefix.pch */,
+				76C560EADF46922F3B3EF5C9493820CA /* YelpAPI-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YelpAPI";
+			sourceTree = "<group>";
+		};
+		7373ACB6198F1E9475AFA1E54D8EAA0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C01CAF06394816DE12EC9314E5E242 /* Alamofire.framework */,
+				11B39269311CF4ED9DDB804E1BF9B2AF /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		7A0838A2430DDFC72B577E6E794180B6 /* CorePromise */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				4455AAD033155B24E0D1E59BE51D7C8E /* after.m */,
+				EDD1B2A83EE524B7E0D4F355FA38BCE7 /* after.swift */,
+				8C01EAC8ADAD60895371088BC51279E8 /* AnyPromise.h */,
+				9B3C32A276653FE6828B6A16FF2FE337 /* AnyPromise.m */,
+				72F95CA1CD14428CE26185A789099809 /* AnyPromise.swift */,
+				F7908A1C98006F6AE24B4D9CECE62BD9 /* Box.swift */,
+				819399AE4F42C81D179EAD8C9A602D0A /* Catchable.swift */,
+				373598AACE19164E29A0F1692D37D630 /* Configuration.swift */,
+				8A8B0024A433FA741A13A4B74DBBD5E3 /* CustomStringConvertible.swift */,
+				32B6227BCF8B4E3E145DD40E40AD97B8 /* Deprecations.swift */,
+				8ED3AF4FC579C3917AFAFCFEEAC99772 /* dispatch_promise.m */,
+				C20AA449C58D39CAD6B09CF25D50BBDF /* Error.swift */,
+				FC5CA69DD967B14BE6AA7EDC24605075 /* firstly.swift */,
+				691B51E188FA47AE62A1946B4E780AEC /* fwd.h */,
+				1B51A5AB227CD2605D0A57B77A2CC5C7 /* Guarantee.swift */,
+				CA2D01C1B9406E6641EA241D1731DC8C /* hang.m */,
+				653130776D1AB6CD2B99F7F439B52C59 /* hang.swift */,
+				17094D6CEDD3CC5C2F604C83D01DE559 /* join.m */,
+				C8FB59BCFFD280AE525A2ABB5C799505 /* Promise.swift */,
+				E2EB1BB05769BD9D044421307D859F64 /* PromiseKit.h */,
+				97EFF65DA7CB74488E9A48D972440C7A /* race.swift */,
+				395E91B5999B54C20016B1F387714CAB /* Resolver.swift */,
+				45E7AE5DD7DF44D768BC129385335425 /* Thenable.swift */,
+				5FB11B6E5873D8E92B0D13F37FE9908E /* when.m */,
+				2CA6B1D13FB95855F295EE81C0DCC304 /* when.swift */,
 			);
-			name = iOS;
+			name = CorePromise;
 			sourceTree = "<group>";
 		};
-		EBB6463E7A036BE9D4F225C05AAC8C5C /* Products */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				C2E60DAD704F5940408C5850BA047D3A /* Pods_panoptic_ios.framework */,
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				7373ACB6198F1E9475AFA1E54D8EAA0A /* Frameworks */,
+				3D68FBD86AAD6FB6CEAC5562E73689FD /* Pods */,
+				B7FF92785ED93D0F91CCDCBFBF7FFC66 /* Products */,
+				1BCE14FF7FFB323555AD25CC72186F3A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		810DBE189ABDB4714FE5B3AAC5B56DD9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				567EA2FFB7BD0EE4ABB1312289D4C71F /* Info.plist */,
+				CF3AC835F7C38A612E89385CB25FB2FA /* PromiseKit.modulemap */,
+				2CECE0FA0B1070B5D4F58D0A2A92F810 /* PromiseKit.xcconfig */,
+				ADDA986BCBE90446D6A1FDE16C382B53 /* PromiseKit-dummy.m */,
+				FA6318599BD8532E360C396DDABCA525 /* PromiseKit-prefix.pch */,
+				860EE000B3B38F8AB14B01101BD6E871 /* PromiseKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PromiseKit";
+			sourceTree = "<group>";
+		};
+		84560862282082A04399B6C7C69B312B /* PromiseKit */ = {
+			isa = PBXGroup;
+			children = (
+				FEC4FCE15BC1EDFD4DCCCF05A4D479B0 /* Alamofire */,
+				0E27A37E55E8BF88A99D726AF89750B0 /* CoreLocation */,
+				7A0838A2430DDFC72B577E6E794180B6 /* CorePromise */,
+				545588EE4684A0E88A44CD6523B7E0C9 /* Foundation */,
+				991EAF535691553531EFF37EE8750C10 /* MapKit */,
+				810DBE189ABDB4714FE5B3AAC5B56DD9 /* Support Files */,
+				F2AB66BD2E24E04DF760338812173A08 /* UIKit */,
+			);
+			name = PromiseKit;
+			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		991EAF535691553531EFF37EE8750C10 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				330FB8F5B196BF834026F08BCC78EDBD /* MKDirections+AnyPromise.h */,
+				4E9451DA86A75A049313C4AABDBE0069 /* MKDirections+AnyPromise.m */,
+				393ED28AD99731AEB7A9608B0CF4E84E /* MKDirections+Promise.swift */,
+				95C7ECB55650325DD6F3C8918F39E186 /* MKMapSnapshotter+AnyPromise.h */,
+				FFD2364C155649E34F75ABC8B3C4B05A /* MKMapSnapshotter+AnyPromise.m */,
+				69B0ECC3BBABFFDDEBFAC6C2C18BEB4C /* MKMapSnapshotter+Promise.swift */,
+				EAE1C17D8F9483EA6C4A1C464156F88E /* PMKMapKit.h */,
+			);
+			name = MapKit;
+			sourceTree = "<group>";
+		};
+		B7FF92785ED93D0F91CCDCBFBF7FFC66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C7A82E99A91FECF4461BA076EF2E51 /* Alamofire.framework */,
+				A12460DCD41DE1F1E00AA704103AC386 /* Pods_panoptic_ios.framework */,
+				AF15FF73266ED23390786D5A97781B8F /* PromiseKit.framework */,
+				DA654DAC710809B98AB8BCB9E82FE261 /* YelpAPI.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B83286653F9525E385F5467E5DEC9742 /* YelpAPI */ = {
+			isa = PBXGroup;
+			children = (
+				72AABBDA08A5B45250FE7F939B9B8812 /* NSDictionary+YLPUtils.m */,
+				76A94B0A31DD24F11DFA7EA242AB8DDC /* YelpAPI.h */,
+				336069917B4994DCA147647C8215C2A4 /* YLPBusiness.h */,
+				25081520690CAD22EDF25A350A32D5ED /* YLPBusiness.m */,
+				B1C2233392EF0B55E543B8421804870A /* YLPBusinessReviews.h */,
+				C8ABEDF914FAF7354A160E528B09354F /* YLPBusinessReviews.m */,
+				2103CBFCA41C9D2FB37651B2DDC3B913 /* YLPCategory.h */,
+				0D1201D478FC0FC8D633CF1BC93A1178 /* YLPCategory.m */,
+				BFB9D5B7C2F2185DB6C9C85277744906 /* YLPClient.h */,
+				29F63452BF01569C6E0F8090A0E367D0 /* YLPClient.m */,
+				10BE8B3FA0A5C5DD2CBC4C8A0783DDFF /* YLPClient+Business.h */,
+				BB78F0DD1E44100250C82F3AD152A993 /* YLPClient+Business.m */,
+				263BDD041A014936FA90F07EA66A70B7 /* YLPClient+PhoneSearch.h */,
+				FDC24BACC8AD97BA9FEB3109FAB02EA2 /* YLPClient+PhoneSearch.m */,
+				82BA037AD7D5110352F35528A101F637 /* YLPClient+Reviews.h */,
+				0FF7175006A09BEFFB3594ADBB4A5F91 /* YLPClient+Reviews.m */,
+				196572D365975F8D367DEA951E7ECAF7 /* YLPClient+Search.h */,
+				1E6ACBEA36C19C63A0F031B38C254EDA /* YLPClient+Search.m */,
+				C31CFB73BEDCE1BFC7166B691240B474 /* YLPClientPrivate.h */,
+				8CA4DA9854CE60BEA1602A4080E5E31F /* YLPCoordinate.h */,
+				13C5E722B24C22735F17FCE5C668C3A9 /* YLPCoordinate.m */,
+				DB602813EAA2CBD58E783191D2D6A5F5 /* YLPLocation.h */,
+				CF1BDE804FC83ECCB214DC0630ACBE3B /* YLPLocation.m */,
+				191F83134BA76DE8626B1688EEEA5428 /* YLPQuery.h */,
+				FC3305533C5204FCB0EC78C647820DA0 /* YLPQuery.m */,
+				D10CC8478F3D1359DC19199D8171DC87 /* YLPQueryPrivate.h */,
+				815C160F6FDC2739DF5833788B811D8A /* YLPResponsePrivate.h */,
+				69220FBEF804DF05D077CEAB42CDC540 /* YLPReview.h */,
+				84684CAE594343FE7440C3E61789EC8E /* YLPReview.m */,
+				935371D0C8E037667B65224E4A165CDA /* YLPSearch.h */,
+				50A634996F4B3D5BEE679B67AEAD14E7 /* YLPSearch.m */,
+				6504BC4BFFED7F195880BB05DF9667EE /* YLPSortType.h */,
+				C7AF5318313C9903E375259080526CFB /* YLPUser.h */,
+				3F308BDDF008AA5D83444AB2304785A4 /* YLPUser.m */,
+				55165A2071DB9CE8D47CBE105CF998A4 /* Support Files */,
+			);
+			name = YelpAPI;
+			path = YelpAPI;
+			sourceTree = "<group>";
+		};
+		F2AB66BD2E24E04DF760338812173A08 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A96FDBFEA8FFD0C6AB777AF445DDF40A /* PMKUIKit.h */,
+				F0E13B86668470DB086E5993718BA1BA /* UIView+AnyPromise.h */,
+				4A48FB816CA10A5960591E56A52CB8AC /* UIView+AnyPromise.m */,
+				B93A96925E7F1C124ED75FB2B6598B52 /* UIView+Promise.swift */,
+				984839088AAFC8FEC8F08BA5AF2F25B4 /* UIViewController+AnyPromise.h */,
+				6EBD03BCCC93176A2C5E3F036708CED1 /* UIViewController+AnyPromise.m */,
+				449CFB44F604D3963155D33004A503A1 /* UIViewPropertyAnimator+Promise.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		FA38A11656887F416E923AF15C86A212 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A61C38522C5E0FE6AC13B252A9AA94B /* Alamofire.modulemap */,
+				ABC761EADF9B37C96B959F6081E77C58 /* Alamofire.xcconfig */,
+				8933C11D520AA1DE4F7517B3A54C902B /* Alamofire-dummy.m */,
+				D3F6B3436A00177699B0BD9145C4717D /* Alamofire-prefix.pch */,
+				E3C2C7D042C98B0F117DC696D16C910B /* Alamofire-umbrella.h */,
+				2E64F9234E30000F1930D5B8751ED3E0 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		FEC4FCE15BC1EDFD4DCCCF05A4D479B0 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				6F18C230D7812CAF87B0BEC45AAA509A /* Alamofire+Promise.swift */,
+			);
+			name = Alamofire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DC999226ED458618116FDAAAB0DE6CAB /* Headers */ = {
+		62FBF43C752038B6BFC6F469432D8EC8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DBEAAF26C675E5629C3CB0456696145 /* Pods-panoptic-ios-umbrella.h in Headers */,
+				803CF4BD06A7E5F2AE61EC2311996413 /* YelpAPI-umbrella.h in Headers */,
+				0985AFE7CE378DE1A23CF35F46A0ADB2 /* YelpAPI.h in Headers */,
+				31A180025C0729B2C0E2E75C1DFB72AE /* YLPBusiness.h in Headers */,
+				B0CAE4AAE6B6A6C6FDEC58434B02E851 /* YLPBusinessReviews.h in Headers */,
+				68E80ED321E41F069DC591BC1FA5CE35 /* YLPCategory.h in Headers */,
+				EC239B2809CF6E05114703C542785D4C /* YLPClient+Business.h in Headers */,
+				59E16575C48E79B601D89ADB77AB32C7 /* YLPClient+PhoneSearch.h in Headers */,
+				3DCA8FCEA0B7304695DDED9D40498AB2 /* YLPClient+Reviews.h in Headers */,
+				E03F761A4E5F2DEA21A08CB3A28D6275 /* YLPClient+Search.h in Headers */,
+				4EC45A6E65C00D0CF04D2CF47AE19E6D /* YLPClient.h in Headers */,
+				E3EA39AA6C2D738A3A0E4ECAEC3DF5F1 /* YLPClientPrivate.h in Headers */,
+				F47C7C54128A20E9D3A4D2172BF7F19F /* YLPCoordinate.h in Headers */,
+				7017D3786465C533FF969031E6144A57 /* YLPLocation.h in Headers */,
+				3748A0A7E4D459753E6ECC60099AD4E7 /* YLPQuery.h in Headers */,
+				179BCE664FC5C916815B2432B21F7F3A /* YLPQueryPrivate.h in Headers */,
+				A04F716903226403A3C53697B721CC9D /* YLPResponsePrivate.h in Headers */,
+				CE35BC93FB51C9757D46519579BC1FDB /* YLPReview.h in Headers */,
+				ABE4413A7EB6845626B1A275A7BD9DAB /* YLPSearch.h in Headers */,
+				39A0CED99582943B2774B6C1754915A8 /* YLPSortType.h in Headers */,
+				6FD39FAA68E02AE7DCBD94AF6B2D3C45 /* YLPUser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC508C8D2CED0D5E141F81F3D6518DE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3598BEC4AC6DBAAA66EC21F5BFE26A /* AnyPromise.h in Headers */,
+				9188B02F20D52FBA8BC4AB1F1CB6E3EB /* CLGeocoder+AnyPromise.h in Headers */,
+				87E1EEF858B8544F978F0B2D3B5162F2 /* CLLocationManager+AnyPromise.h in Headers */,
+				C7F035D678AD9598B512BF1F75E4DBD6 /* fwd.h in Headers */,
+				0A4D570D8B757DF5B6929E702A570D5C /* MKDirections+AnyPromise.h in Headers */,
+				C134A60FCB314FE6E698E6C4B0B2D969 /* MKMapSnapshotter+AnyPromise.h in Headers */,
+				A2976DB33C148B7C6DC296BA5544F8CA /* NSNotificationCenter+AnyPromise.h in Headers */,
+				428EE53B23B67FFB0F3EC06F19D2211E /* NSTask+AnyPromise.h in Headers */,
+				752957DFECF2B829D1E315443E52D01E /* NSURLSession+AnyPromise.h in Headers */,
+				C3C5594C2BA933D90D2014586FEC3CD0 /* PMKCoreLocation.h in Headers */,
+				C2CB1B35DFE7D4D04EC2E681D7A5EFEA /* PMKFoundation.h in Headers */,
+				C6D1098EC720C474EE19094BAC0E25BE /* PMKMapKit.h in Headers */,
+				8521573B204BA9F39CC0488F2E91BF0A /* PMKUIKit.h in Headers */,
+				F693798EC92DB7A03102C1C72F6BD27C /* PromiseKit-umbrella.h in Headers */,
+				BF7A5F8E287226003057D4EBA48387E6 /* PromiseKit.h in Headers */,
+				AC2DD71997C524A46035803DCE47F6B0 /* UIView+AnyPromise.h in Headers */,
+				1A1488E7636A460AAE2E08803B3CADF9 /* UIViewController+AnyPromise.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A786C151E2A16730785459CAFF064FD0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29DC7FFAEC06AB45DC8F145746EA9063 /* Pods-panoptic-ios-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C03E6C8FE0DA66EAE1D1AFE2253246CE /* Pods-panoptic-ios */ = {
+		4ABF7332DF4FC36B612812D7873AFC7C /* YelpAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B88AB48A1417F905237939AD39C0D482 /* Build configuration list for PBXNativeTarget "Pods-panoptic-ios" */;
+			buildConfigurationList = FB0CC03050B83B54766BE2025971B6C1 /* Build configuration list for PBXNativeTarget "YelpAPI" */;
 			buildPhases = (
-				41FF5B9FEF95AE1B1EB1B46FBD9E2BF2 /* Sources */,
-				C9CAC2A840E77AA5DBBB0B060D8DED93 /* Frameworks */,
-				DC999226ED458618116FDAAAB0DE6CAB /* Headers */,
+				24FD921D9DDA90407B32770F9D78EFD0 /* Sources */,
+				E883B3BB79688C30A0FD633770E0D3D2 /* Frameworks */,
+				62FBF43C752038B6BFC6F469432D8EC8 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = YelpAPI;
+			productName = YelpAPI;
+			productReference = DA654DAC710809B98AB8BCB9E82FE261 /* YelpAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				32B9974868188C4803318E36329C87FE /* Sources */,
+				99195E4207764744AEC07ECCBCD550EB /* Frameworks */,
+				B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 08C7A82E99A91FECF4461BA076EF2E51 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ADB89CC2EC3D92D7B27EA2FA476CFE4D /* PromiseKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA702E8E931EFE3A4F4197A8C418CC4 /* Build configuration list for PBXNativeTarget "PromiseKit" */;
+			buildPhases = (
+				50D9B4ED7FFDB1CC202754010FB5A751 /* Sources */,
+				9FDF776127BB9C243AAA37B9287AABD1 /* Frameworks */,
+				9BC508C8D2CED0D5E141F81F3D6518DE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC2DB912BECC204D83E23BFFBB9AA016 /* PBXTargetDependency */,
+			);
+			name = PromiseKit;
+			productName = PromiseKit;
+			productReference = AF15FF73266ED23390786D5A97781B8F /* PromiseKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7045C6D28125269CEF6930B34F77543 /* Pods-panoptic-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5B497CF7A1D5D3DE0BC63E4AEE43F6 /* Build configuration list for PBXNativeTarget "Pods-panoptic-ios" */;
+			buildPhases = (
+				69EBA43CF547AB4E4AC9951F2687740F /* Sources */,
+				48AFC2A140316D72F559231922A77200 /* Frameworks */,
+				A786C151E2A16730785459CAFF064FD0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F09E6620DEFE6973CD50B0C30FD62DF /* PBXTargetDependency */,
+				3101C019D301A8FB932BD4E8AA42F398 /* PBXTargetDependency */,
+				DEC53A3E4B4235C95BCD4B315493D848 /* PBXTargetDependency */,
+			);
 			name = "Pods-panoptic-ios";
 			productName = "Pods-panoptic-ios";
-			productReference = C2E60DAD704F5940408C5850BA047D3A /* Pods_panoptic_ios.framework */;
+			productReference = A12460DCD41DE1F1E00AA704103AC386 /* Pods_panoptic_ios.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,28 +824,189 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EBB6463E7A036BE9D4F225C05AAC8C5C /* Products */;
+			productRefGroup = B7FF92785ED93D0F91CCDCBFBF7FFC66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C03E6C8FE0DA66EAE1D1AFE2253246CE /* Pods-panoptic-ios */,
+				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				D7045C6D28125269CEF6930B34F77543 /* Pods-panoptic-ios */,
+				ADB89CC2EC3D92D7B27EA2FA476CFE4D /* PromiseKit */,
+				4ABF7332DF4FC36B612812D7873AFC7C /* YelpAPI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		41FF5B9FEF95AE1B1EB1B46FBD9E2BF2 /* Sources */ = {
+		24FD921D9DDA90407B32770F9D78EFD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8661DAA80514038463B09D2A4E74719 /* Pods-panoptic-ios-dummy.m in Sources */,
+				1833B9FDB11C18FED088E7D0902A6002 /* NSDictionary+YLPUtils.m in Sources */,
+				F942368554F9A935B50A486E67D4AF39 /* YelpAPI-dummy.m in Sources */,
+				D3AFD73B16D93999AE74D0B4D6AEB0FA /* YLPBusiness.m in Sources */,
+				F30D56AAFB0FBE094F793D0AA991188A /* YLPBusinessReviews.m in Sources */,
+				8A29C1547C03E524844384F6606CB55B /* YLPCategory.m in Sources */,
+				DEFEC37DB94E54DE5CBCB06AA25F6349 /* YLPClient+Business.m in Sources */,
+				46B82A4719EF99A91AD665E98D4878FE /* YLPClient+PhoneSearch.m in Sources */,
+				EC835A1EE5988FD3A161A7AB13233091 /* YLPClient+Reviews.m in Sources */,
+				78C9914788ED2834081A0A6ADCA332D1 /* YLPClient+Search.m in Sources */,
+				27913A4259D34BF6B6C70EAF82CD092A /* YLPClient.m in Sources */,
+				2D887C7E0C48DDDADF0CE341FC1754C2 /* YLPCoordinate.m in Sources */,
+				8E4B3075BC93350AE99E66D7CBA430B7 /* YLPLocation.m in Sources */,
+				02AED1460E21A3E7C33AC480D7B0F3D6 /* YLPQuery.m in Sources */,
+				0A7659833769A24792BD27D72DC389AE /* YLPReview.m in Sources */,
+				8883D11A96E7996B34C38110C95A71F0 /* YLPSearch.m in Sources */,
+				2D077167DFB19E7936369F50E4EF4480 /* YLPUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B9974868188C4803318E36329C87FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */,
+				A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */,
+				F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */,
+				61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */,
+				B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */,
+				A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */,
+				EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */,
+				BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */,
+				5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */,
+				CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */,
+				F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */,
+				7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */,
+				62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */,
+				7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */,
+				AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */,
+				3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */,
+				10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */,
+				BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50D9B4ED7FFDB1CC202754010FB5A751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B800B62B6F99F75153AC2F6E34CAFBA6 /* after.m in Sources */,
+				8FAA2F3CF4CFF2EE22CE14C7741B5CE4 /* after.swift in Sources */,
+				9887942A8D9A547FEDED8E75537BD78B /* afterlife.swift in Sources */,
+				0598BF2944CAEBDED533C1CC0996BE40 /* Alamofire+Promise.swift in Sources */,
+				946A8C4C84B5CBC0622E22AFFFBC7A32 /* AnyPromise.m in Sources */,
+				D3DE1935C23E48A537D1EED2D6EE7903 /* AnyPromise.swift in Sources */,
+				3079BC3FFA52FA7F6AA6A570242AB5B9 /* Box.swift in Sources */,
+				05DEDC15C147194BAAC3750055AC1EE5 /* Catchable.swift in Sources */,
+				CBABC95192B0FC1A9D874DC6E39A0438 /* CLGeocoder+AnyPromise.m in Sources */,
+				959C2D1C1E632EEE9E116DFDD0F0D335 /* CLGeocoder+Promise.swift in Sources */,
+				513893BF19467554AB31A443555E548B /* CLLocationManager+AnyPromise.m in Sources */,
+				F6F9149332A0E6D01C46613B6CD655A3 /* CLLocationManager+Promise.swift in Sources */,
+				CCFFB95556D18583A5965D3D63F74CB7 /* Configuration.swift in Sources */,
+				618F42C65E2504CCB71332E37FDB678F /* CustomStringConvertible.swift in Sources */,
+				D1B21FDC05ED56A04CF120656C7C1169 /* Deprecations.swift in Sources */,
+				6BE1F485BF419F5026AF4C8B8B166B74 /* dispatch_promise.m in Sources */,
+				149B26995954EF650EF2C483CE384C01 /* Error.swift in Sources */,
+				28513622F8E11E796D809B498D787351 /* firstly.swift in Sources */,
+				1E91D3AAA7E4617C56B45893F1FF7BAF /* Guarantee.swift in Sources */,
+				B290A0C6C0B2F177A62E8A4F28FAF621 /* hang.m in Sources */,
+				AA1FDFE4D0B2F701577EC7BC69FCFF0B /* hang.swift in Sources */,
+				BC6977259EE215A1976813DE524B6F90 /* join.m in Sources */,
+				DEFCE59E20E3FF2C22BC4BF07A81AA93 /* MKDirections+AnyPromise.m in Sources */,
+				B0ACC60B66FA8D064C45D18F50D510C5 /* MKDirections+Promise.swift in Sources */,
+				0713CCE04CF7EE94543BA3A049EEBB3E /* MKMapSnapshotter+AnyPromise.m in Sources */,
+				8283036D4F68443B3974E697CEBE24C2 /* MKMapSnapshotter+Promise.swift in Sources */,
+				A1F4E36AD016684424AD67CE5ADF02D6 /* NSNotificationCenter+AnyPromise.m in Sources */,
+				93B2B989C8D3B95BDE36A07A3B1E5B72 /* NSNotificationCenter+Promise.swift in Sources */,
+				75CBDC6D1AD9D35B89B9314F11258ECA /* NSObject+Promise.swift in Sources */,
+				1A4A27B555C642C9ED84F185987B79FA /* NSTask+AnyPromise.m in Sources */,
+				36132D79D7AA7953F149130FD209FF94 /* NSURLSession+AnyPromise.m in Sources */,
+				94C8EFA6670EE864AB9CF6F32D90CE0F /* NSURLSession+Promise.swift in Sources */,
+				42A1074BD15A69C9D2F901BF44581C00 /* Process+Promise.swift in Sources */,
+				F3431E958844FD5B624F23213B7B49D7 /* Promise.swift in Sources */,
+				ABAF551340A44595B53FB8C3E3980B3D /* PromiseKit-dummy.m in Sources */,
+				6D34EBE3DA0DD94ABC8EF8E9091A5179 /* race.swift in Sources */,
+				504AEBD129ED8420AE984291D1A86CDE /* Resolver.swift in Sources */,
+				1D3DC8D7983A8513B564B6357FC0619F /* Thenable.swift in Sources */,
+				083DF1DB1FDB3EE678038AE5D65315A8 /* UIView+AnyPromise.m in Sources */,
+				2D2B923C52F9CABA01816D890B0A7896 /* UIView+Promise.swift in Sources */,
+				25843E0889B570A63C3825E28517D1E0 /* UIViewController+AnyPromise.m in Sources */,
+				EAF43B1E09006041E718306F15DD5CFA /* UIViewPropertyAnimator+Promise.swift in Sources */,
+				29F3EF22D045A16D136AE96C2AEE04DD /* when.m in Sources */,
+				3A975F6937B65117AB86342382191EAE /* when.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69EBA43CF547AB4E4AC9951F2687740F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF08FD41B6D852BE51F904FEC56FFD0A /* Pods-panoptic-ios-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3101C019D301A8FB932BD4E8AA42F398 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PromiseKit;
+			target = ADB89CC2EC3D92D7B27EA2FA476CFE4D /* PromiseKit */;
+			targetProxy = 3A62F81BF7236F16F21D5D4E10D76D4C /* PBXContainerItemProxy */;
+		};
+		3F09E6620DEFE6973CD50B0C30FD62DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 1554C50173619420DD2E2763EEEF1408 /* PBXContainerItemProxy */;
+		};
+		CC2DB912BECC204D83E23BFFBB9AA016 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = EA21710B315764020158F9A108FA13B0 /* PBXContainerItemProxy */;
+		};
+		DEC53A3E4B4235C95BCD4B315493D848 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YelpAPI;
+			target = 4ABF7332DF4FC36B612812D7873AFC7C /* YelpAPI */;
+			targetProxy = 1946E26D9EAF40B52F4B001516E4232A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		4E32339729915547D8F9CCB55746C6CE /* Debug */ = {
+		1F4143C3FAB40B5E5835DBB758B002BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CECE0FA0B1070B5D4F58D0A2A92F810 /* PromiseKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PromiseKit/PromiseKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromiseKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
+				PRODUCT_NAME = PromiseKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		57A1F81AEDBFEB5A49A9629EC93BA433 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FFB46541ACA119ACF87DC51B32462472 /* Pods-panoptic-ios.debug.xcconfig */;
 			buildSettings = {
@@ -195,6 +1032,8 @@
 				PRODUCT_NAME = Pods_panoptic_ios;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -316,7 +1155,131 @@
 			};
 			name = Release;
 		};
-		FFC8446CD873DD5D63FB7F046DDF5AEB /* Release */ = {
+		A268F42E3F0CB719E43F8D6228C23789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CECE0FA0B1070B5D4F58D0A2A92F810 /* PromiseKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PromiseKit/PromiseKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PromiseKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PromiseKit/PromiseKit.modulemap";
+				PRODUCT_NAME = PromiseKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A6BDDC5D3DADAF74428811CDCFAA2EFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E0239D528C16253079036E1980A3D6 /* YelpAPI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YelpAPI/YelpAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YelpAPI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YelpAPI/YelpAPI.modulemap";
+				PRODUCT_NAME = YelpAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0F5F1530D3F4E518BE2B1A52F98487A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC761EADF9B37C96B959F6081E77C58 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B8CA02655A4B738D82484691EE8CA58F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC761EADF9B37C96B959F6081E77C58 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAAD1EFC7EBCBA1F87B5E21575CDB203 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 13600DE1E1B5B7DC4D50EC34180AE96D /* Pods-panoptic-ios.release.xcconfig */;
 			buildSettings = {
@@ -342,6 +1305,38 @@
 				PRODUCT_NAME = Pods_panoptic_ios;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E0AF8CBF8D78DB70ACAB3593AB6CA17B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E0239D528C16253079036E1980A3D6 /* YelpAPI.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YelpAPI/YelpAPI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YelpAPI/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YelpAPI/YelpAPI.modulemap";
+				PRODUCT_NAME = YelpAPI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -361,11 +1356,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B88AB48A1417F905237939AD39C0D482 /* Build configuration list for PBXNativeTarget "Pods-panoptic-ios" */ = {
+		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E32339729915547D8F9CCB55746C6CE /* Debug */,
-				FFC8446CD873DD5D63FB7F046DDF5AEB /* Release */,
+				B0F5F1530D3F4E518BE2B1A52F98487A /* Debug */,
+				B8CA02655A4B738D82484691EE8CA58F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACA702E8E931EFE3A4F4197A8C418CC4 /* Build configuration list for PBXNativeTarget "PromiseKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A268F42E3F0CB719E43F8D6228C23789 /* Debug */,
+				1F4143C3FAB40B5E5835DBB758B002BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0CC03050B83B54766BE2025971B6C1 /* Build configuration list for PBXNativeTarget "YelpAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6BDDC5D3DADAF74428811CDCFAA2EFE /* Debug */,
+				E0AF8CBF8D78DB70ACAB3593AB6CA17B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5B497CF7A1D5D3DE0BC63E4AEE43F6 /* Build configuration list for PBXNativeTarget "Pods-panoptic-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57A1F81AEDBFEB5A49A9629EC93BA433 /* Debug */,
+				DAAD1EFC7EBCBA1F87B5E21575CDB203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
