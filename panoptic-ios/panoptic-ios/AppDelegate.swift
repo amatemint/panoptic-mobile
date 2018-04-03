@@ -16,6 +16,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let searchTabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.search, tag: 0)
+        searchTabBarItem.setValue("Find", forKey: "internalTitle")
+        let searchViewController = UIViewController()
+        searchViewController.view.backgroundColor = UIColor.blue
+        searchViewController.tabBarItem = searchTabBarItem
+        
+        let bookTabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.bookmarks, tag: 1)
+        let bookViewController = UIViewController()
+        bookTabBarItem.setValue("Research", forKey: "internalTitle")
+        bookViewController.view.backgroundColor = UIColor.yellow
+
+        bookViewController.tabBarItem = bookTabBarItem
+        
+        let contactTabBarItem = UITabBarItem(tabBarSystemItem: UITabBarSystemItem.contacts, tag: 2)
+        let contactViewController = UIViewController()
+        contactTabBarItem.setValue("Contact", forKey: "internalTitle")
+        contactViewController.view.backgroundColor = UIColor.green
+
+        contactViewController.tabBarItem = contactTabBarItem
+        
+        let viewControllers = [searchViewController, bookViewController, contactViewController]
+        
+        let tabBarController = UITabBarController()
+        
+        
+        tabBarController.viewControllers = viewControllers
+        self.window?.rootViewController = tabBarController
+        
         return true
     }
 
