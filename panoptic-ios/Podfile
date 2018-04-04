@@ -3,12 +3,13 @@ platform :ios, '10.0'
 use_frameworks!
 
 def shared_pods
-	pod "Alamofire"
-	pod "YelpAPI" 
-	pod "PromiseKit", "~> 6.0"
+	pod 'Alamofire"
+	pod 'YelpAPI'
+	pod 'PromiseKit', '~> 6.0'
 	pod 'PromiseKit/Alamofire', '~> 6.0'
-	pod "PromiseKit/CoreLocation", '~> 6.0'
-	pod "PromiseKit/MapKit", '~> 6.0' 
+	pod 'PromiseKit/CoreLocation', '~> 6.0'
+	pod 'PromiseKit/MapKit", '~> 6.0'
+    pod 'YLTableView', '~> 2.0'
 end
 
 target 'panoptic-ios' do

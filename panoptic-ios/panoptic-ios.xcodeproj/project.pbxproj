@@ -13,6 +13,9 @@
 		A6CBC01320697DDA007A47A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CBC01220697DDA007A47A2 /* Assets.xcassets */; };
 		A6CBC01620697DDA007A47A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CBC01420697DDA007A47A2 /* LaunchScreen.storyboard */; };
 		A6FB54C0207447C000195029 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54BF207447C000195029 /* APIService.swift */; };
+		A6FB54C2207449E000195029 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54C1207449E000195029 /* Constants.swift */; };
+		A6FB54C420744B1400195029 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB54C320744B1400195029 /* Search.storyboard */; };
+		A6FB54C620744B2B00195029 /* UIStoryBoard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54C520744B2B00195029 /* UIStoryBoard+Extensions.swift */; };
 		DD4448723B3CEB18347D2589 /* Pods_panoptic_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0139BE0FE65ED0618903BB0C /* Pods_panoptic_ios.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		A6CBC01520697DDA007A47A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6CBC01720697DDA007A47A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6FB54BF207447C000195029 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A6FB54C1207449E000195029 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A6FB54C320744B1400195029 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		A6FB54C520744B2B00195029 /* UIStoryBoard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryBoard+Extensions.swift"; sourceTree = "<group>"; };
 		EF159482B2D04EB976BDF833 /* Pods-panoptic-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-panoptic-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-panoptic-ios/Pods-panoptic-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,10 +88,13 @@
 			children = (
 				A6CBC00B20697DDA007A47A2 /* AppDelegate.swift */,
 				A6FB54BF207447C000195029 /* APIService.swift */,
+				A6FB54C1207449E000195029 /* Constants.swift */,
 				A6CBC00D20697DDA007A47A2 /* ViewController.swift */,
 				A6CBC00F20697DDA007A47A2 /* Main.storyboard */,
 				A6CBC01220697DDA007A47A2 /* Assets.xcassets */,
 				A6CBC01420697DDA007A47A2 /* LaunchScreen.storyboard */,
+				A6FB54C320744B1400195029 /* Search.storyboard */,
+				A6FB54C520744B2B00195029 /* UIStoryBoard+Extensions.swift */,
 				A6CBC01720697DDA007A47A2 /* Info.plist */,
 			);
 			path = "panoptic-ios";
@@ -155,6 +164,7 @@
 			files = (
 				A6CBC01620697DDA007A47A2 /* LaunchScreen.storyboard in Resources */,
 				A6CBC01320697DDA007A47A2 /* Assets.xcassets in Resources */,
+				A6FB54C420744B1400195029 /* Search.storyboard in Resources */,
 				A6CBC01120697DDA007A47A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6CBC00E20697DDA007A47A2 /* ViewController.swift in Sources */,
+				A6FB54C620744B2B00195029 /* UIStoryBoard+Extensions.swift in Sources */,
 				A6FB54C0207447C000195029 /* APIService.swift in Sources */,
 				A6CBC00C20697DDA007A47A2 /* AppDelegate.swift in Sources */,
+				A6FB54C2207449E000195029 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
